@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Noto Serif TC', serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #09b5a4;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> 
+                <a id="Objectives" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bullseye"></i> 
+                <a id="Project Goals" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-network-wired"></i> 
+                <a id="Key Results" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-tree"></i> 
+                <a id="Habits" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-arrows-rotate"></i> 
+                <a id="Actions" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-spinner"></i> Actions</a>
+                <a id="Visionary Tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-comment-dots"></i> 
+                <a id="Goals" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-star-half-stroke"></i> 
+                <a id="Journal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-journal-whills"></i>
+                <a id="汉语学习Hub" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-language"></i> 
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/moshy/The-Visionary-One-87ad75f293b242b1a5ed11bbaa796ede?pvs=4", '_blank').focus();
+			else if (id == 'Objectives')
+				window.open("https://www.notion.so/moshy/OBJECTIVES-a66aade966504d739632c4b27bc567a8?pvs=4", '_blank').focus();
+                        else if (id == 'Project Goals')
+				window.open("https://www.notion.so/moshy/PROJECT-GOALS-dd393303dadc4566ab0da0a718b32a25?pvs=4", '_blank').focus();
+                        else if (id == 'Key Results')
+				window.open("https://www.notion.so/moshy/KEY-RESULTS-592771e0848d49c0bdc70a03ad5db161?pvs=4", '_blank').focus();
+                        else if (id == 'Habits')
+				window.open("https://www.notion.so/moshy/HABITS-06afa6beb6654a71821acc514fd3104f?pvs=4", '_blank').focus();
+                        else if (id == 'Actions')
+				window.open("https://www.notion.so/moshy/ACTIONS-1474b230c81b47f59b53abda08d1bd86?pvs=4", '_blank').focus();
+                        else if (id == 'Visionary Tasks')
+				window.open("https://www.notion.so/moshy/VISIONARY-TASKS-d470c97e42504b98a41c7593e4ef4323?pvs=4", '_blank').focus();
+                        else if (id == 'Goals')
+				window.open("https://www.notion.so/moshy/GOALS-f8c877686c0e43209a46ff22c7a6f33d", '_blank').focus();
+                        else if (id == 'Journal')
+				window.open("https://www.notion.so/moshy/Journal-67b6d08016444c14be66410a17043522?pvs=4", '_blank').focus();
+                        else if (id == '汉语学习Hub')
+				window.open("https://www.notion.so/moshy/Hub-1f98f46c3a124435a503d71d8cf062de", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
