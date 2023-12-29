@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Noto Serif TC', serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #edbecf;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> 
+                <a id="Life Vision" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-forward-fast"></i>
+                <a id="Yearly Vision" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star"></i>
+                <a id="Quarterly Vision" onclick="navigate(this.id)" href="#"><i class="fa-solid fa-circle-half-stroke"></i>
+                <a id="Monthly Goals" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar"></i>
+                <a id="Weekly Goals" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i>
+                <a id="Milstones" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-trophy"></i>
+                <a id="Areas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-spinner"></i>
+                <a id="Self Care" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i>
+                <a id="Planning" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-rectangle-list"></i>       
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/moshy/The-Visionary-One-87ad75f293b242b1a5ed11bbaa796ede?pvs=4", '_blank').focus();
+			else if (id == 'Life Vision')
+				window.open("https://www.notion.so/meisha-smith/Life-Vision-13be4f6ae3f84821bae4f70b8ffc185d?pvs=4", '_blank').focus();
+                        else if (id == 'Yearly Vision')
+				window.open("https://www.notion.so/meisha-smith/Yearly-Vision-554223ee973344afb9f98f7a406b86e1?pvs=4", '_blank').focus();
+                        else if (id == 'Quarterly Vision')
+				window.open("https://www.notion.so/meisha-smith/Quarterly-Vision-2ef1bf78b9af4cc59d8f11b750c8c3e6?pvs=4", '_blank').focus();
+                        else if (id == 'Monthly Goals')
+				window.open("https://www.notion.so/meisha-smith/Monthly-Goals-b761d27f25c6473a8974b31da220da58?pvs=4", '_blank').focus();
+                        else if (id == 'Weekly Goals')
+				window.open("https://www.notion.so/meisha-smith/Weekly-Goals-5a3900c2d5bf4005bca7973c52bdfa8c?pvs=4", '_blank').focus();
+                        else if (id == 'Milstones')
+				window.open("https://www.notion.so/meisha-smith/Milestones-94ad7e8cacac40caa5fcbf869e5ed138?pvs=4", '_blank').focus();
+                        else if (id == 'Areas')
+				window.open("https://www.notion.so/meisha-smith/Areas-bae504487b2945aab5ddeeaa5edafe05?pvs=4", '_blank').focus();
+                        else if (id == 'Self Care')
+				window.open("https://www.notion.so/meisha-smith/Self-Care-b47eb2ebead44164b0688e70cea75b88?pvs=4", '_blank').focus();
+                        else if (id == 'Planning')
+				window.open("https://www.notion.so/meisha-smith/Planning-0737cc9d2d2a4042817567456ea33455?pvs=4", '_blank').focus();
+                      
+		}
+	</script>
+
+
+</body>
+
+</html>
